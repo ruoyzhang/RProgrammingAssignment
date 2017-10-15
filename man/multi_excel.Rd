@@ -17,6 +17,6 @@ multi_excel: reading all sheets of an excel file
 }
 \examples{
 \dontrun{
-multi_excel("/director/of/file")
+multi_excel("/directory/of/file")
 }
 }
