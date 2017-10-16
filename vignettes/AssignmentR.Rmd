@@ -1,0 +1,66 @@
+---
+title: "R Programming Assignment Package Creation"
+author: "Ruoyang Zhang"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette contains a brief overview of the package created 'AssignmentR' as required by the MAP536 course. The package itself contains the various functions that we covered thoroughout the course so far.
+
+## Functions Included
+
+This package includes the following functions:
+
+- draw_a_name
+- draw_names
+- multi_excel
+- my_csv_reader
+- save_as_csv
+
+## draw_a_name
+
+The `draw_a_name` function allows the user to plot the number of babies born in a given year with a specified name and gender in France. The data used in this package comes from the package 'prenoms', the creator of this package do not claim ownership of the the aforementioned package.
+
+## draw_names:
+
+Similar to the function above, this function allows the user to plot the same graph for multiple names in the same graph, however, it should be noted that the gender argument has been dropped in this function. See example below:
+
+library(AssignmentR)
+draw_names(c("Diane", "Vincent"))
+
+```{r}
+#library(AssignmentR)
+#draw_names(c("Diane", "Vincent"))
+```
+
+
+## multi_excel
+
+The multi_excel function allows the user to read all the sheets in an excel file with the extention .xls or .xlsx.
+
+Example:
+```{r}
+#multi_excel ("../directory/to/file.xlsx")
+```
+
+## my_csv_reader
+
+This function allows the user to load all the file with the extension .csv in a specified folder.
+
+Example:
+```{r}
+#my_csv_reader("../directory/to/folder")
+```
+
+## save_as_csv
+
+This function allows the user to save a data frame objective in a specified location in the .csv format.
+
+Example:
+```{r}
+#save_as_csv("../directory/to/output/file.csv")
+```

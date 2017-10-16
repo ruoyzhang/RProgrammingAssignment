@@ -15,3 +15,6 @@ Imports: utils,
     prenoms,
     ggplot2,
     dplyr
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
